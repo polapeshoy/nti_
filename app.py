@@ -51,7 +51,7 @@ DROP_COLUMNS = ["Order", "PID"]
 @st.cache_resource
 def run_full_pipeline_and_cache():
     try:
-        df = pd.read_csv('../data/AmesHousing.csv.xls')
+        df = pd.read_csv('AmesHousing.csv.xls')
     except FileNotFoundError:
         return None
 
